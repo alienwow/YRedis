@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net46", "YRedis_Net46\YRedis_Net46.csproj", "{0A93D730-0575-4241-B846-3262ABBDE321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net4", "YRedis_Net4\YRedis_Net4.csproj", "{B45E3F88-3C86-4EF2-B1E6-99BCAEED363C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net45", "YRedis_Net45\YRedis_Net45.csproj", "{5663AC07-F9EA-44E0-A94B-2408C5CABCDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net461", "YRedis_Net461\YRedis_Net461.csproj", "{1914AAEF-E345-4064-AFD6-EF9364687158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net462", "YRedis_Net462\YRedis_Net462.csproj", "{3B93B3A2-EEC0-4FC5-877B-CE62897CB9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net451", "YRedis_Net451\YRedis_Net451.csproj", "{0D048110-0896-46F1-8F64-35E38BE43818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YRedis_Net452", "YRedis_Net452\YRedis_Net452.csproj", "{675338E2-FB38-4206-8FEE-7CDF8190FEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A93D730-0575-4241-B846-3262ABBDE321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A93D730-0575-4241-B846-3262ABBDE321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A93D730-0575-4241-B846-3262ABBDE321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A93D730-0575-4241-B846-3262ABBDE321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45E3F88-3C86-4EF2-B1E6-99BCAEED363C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45E3F88-3C86-4EF2-B1E6-99BCAEED363C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45E3F88-3C86-4EF2-B1E6-99BCAEED363C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45E3F88-3C86-4EF2-B1E6-99BCAEED363C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5663AC07-F9EA-44E0-A94B-2408C5CABCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5663AC07-F9EA-44E0-A94B-2408C5CABCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5663AC07-F9EA-44E0-A94B-2408C5CABCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5663AC07-F9EA-44E0-A94B-2408C5CABCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1914AAEF-E345-4064-AFD6-EF9364687158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1914AAEF-E345-4064-AFD6-EF9364687158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1914AAEF-E345-4064-AFD6-EF9364687158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1914AAEF-E345-4064-AFD6-EF9364687158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B93B3A2-EEC0-4FC5-877B-CE62897CB9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B93B3A2-EEC0-4FC5-877B-CE62897CB9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B93B3A2-EEC0-4FC5-877B-CE62897CB9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B93B3A2-EEC0-4FC5-877B-CE62897CB9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D048110-0896-46F1-8F64-35E38BE43818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D048110-0896-46F1-8F64-35E38BE43818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D048110-0896-46F1-8F64-35E38BE43818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D048110-0896-46F1-8F64-35E38BE43818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675338E2-FB38-4206-8FEE-7CDF8190FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675338E2-FB38-4206-8FEE-7CDF8190FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675338E2-FB38-4206-8FEE-7CDF8190FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675338E2-FB38-4206-8FEE-7CDF8190FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
