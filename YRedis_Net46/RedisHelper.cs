@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using StackExchange.Redis;
+using Newtonsoft.Json.Converters;
 
 namespace YRedis
 {
@@ -20,6 +21,29 @@ namespace YRedis
         private static ConnectionMultiplexer _redis;
         private static readonly object _locker = new object();
         private static bool _initialized = false;
+
+        private static IsoDateTimeConverter _timeFormat;
+        /// <summary>
+        /// Json序列化时间格式
+        /// </summary>
+        public static IsoDateTimeConverter TimeFormat
+        {
+            get
+            {
+                if (_timeFormat == null)
+                {
+                    _timeFormat = new IsoDateTimeConverter()
+                    {
+                        DateTimeFormat = "yyyy-MM-dd HH:mm:ss"
+                    };
+                }
+                return _timeFormat;
+            }
+            set
+            {
+                _timeFormat = value;
+            }
+        }
 
         /// <summary>
         /// Redis初始化完毕
@@ -917,7 +941,7 @@ namespace YRedis
         {
             if (obj == null)
                 return null;
-            return JsonConvert.SerializeObject(obj);
+            return JsonConvert.SerializeObject(obj, TimeFormat);
         }
         #endregion
     }

@@ -2,7 +2,7 @@
 <package >
     <metadata>
         <id>Alienwow.YRedis</id>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
         <title>YRedis</title>
         <authors>Alienwow</authors>
         <owners>Alienwow</owners>
@@ -11,7 +11,7 @@
         <iconUrl>http://alienwow.cc</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Alienwow</description>
-        <releaseNotes>v1.0.0</releaseNotes>
+        <releaseNotes>v1.0.2</releaseNotes>
         <copyright>Copyright ©  2017 Alienwow</copyright>
         <tags>Log Trace Debug</tags>
         <dependencies>
@@ -34,6 +34,5 @@
         <file src="YRedis_Net461\bin\Release\YRedis.xml" target="lib\net461\"></file>
         <file src="YRedis_Net462\bin\Release\YRedis.dll" target="lib\net462\"></file>
         <file src="YRedis_Net462\bin\Release\YRedis.xml" target="lib\net462\"></file>
-
     </files>
 </package>
