@@ -489,7 +489,7 @@ namespace YRedis
         /// <returns></returns>
         public static bool HExists(string key, string hashid, int db = 0, CommandFlags flags = CommandFlags.None)
         {
-            var database = Redis.GetDatabase();
+            var database = Redis.GetDatabase(db);
             return database.HashExists(key, hashid, flags);
         }
 
@@ -519,7 +519,7 @@ namespace YRedis
         /// <returns></returns>
         public static IDictionary<string, T> HGet<T>(string key, string[] hashids, int db = 0, CommandFlags flags = CommandFlags.None)
         {
-            var database = Redis.GetDatabase();
+            var database = Redis.GetDatabase(db);
             var hashFields = new RedisValue[hashids.Length];
             for (int i = 0; i < hashids.Length; i++)
             {
