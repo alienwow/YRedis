@@ -7,11 +7,10 @@ namespace YRedis.Test
 {
     class Program
     {
-
         public static void Main(string[] args)
         {
             var _contentRootPath = Directory.GetCurrentDirectory();
-            RedisHelper.InitRedis("10.99.20.63:7001,name=YRedis,connectTimeout=180,password=abcd-1234");
+            RedisHelper.InitRedis("127.0.0.1:7001,name=YRedis,connectTimeout=180,password=abcd-1234");
 
             HashSetTest();
             HashGetTest();
