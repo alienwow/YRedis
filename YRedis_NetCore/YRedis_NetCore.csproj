@@ -4,11 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>YRedis</AssemblyName>
     <RootNamespace>YRedis</RootNamespace>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
     <Authors>alienwow</Authors>
     <Company>alienwow</Company>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>Alienwow.YRedis</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
