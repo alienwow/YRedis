@@ -2,8 +2,9 @@
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using YRedis;
 
-namespace YRedis.Test
+namespace YRedis_NetCore2.Test
 {
     class Program
     {

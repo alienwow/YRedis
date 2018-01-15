@@ -1,26 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\build\common.props" />
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>YRedis</AssemblyName>
-    <RootNamespace>YRedis</RootNamespace>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <Authors>alienwow</Authors>
-    <Company>alienwow</Company>
-    <Version>1.0.4</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageId>Alienwow.YRedis</PackageId>
+    <Description>Alienwow.YRedis</Description>
+    <Title>Alienwow.YRedis</Title>
+    <RootNamespace>YRedis</RootNamespace>
+    <AssemblyName>YRedis</AssemblyName>
+    <Copyright>Copyright © Alienwow 2018</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\YRedis.xml</DocumentationFile>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
   </ItemGroup>
-
+  
 </Project>
