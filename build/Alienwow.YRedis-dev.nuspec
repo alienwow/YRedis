@@ -22,7 +22,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Alienwow.YRedis</id>
-    <version>1.0.5-pre1-insider100</version>
+    <version>1.0.7-pre1-insider100</version>
     <title>Alienwow.YRedis</title>
     <authors>alienwow</authors>
     <owners>alienwow</owners>
@@ -32,7 +32,7 @@
     <iconUrl>http://alienwow.cc</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Alienwow.YRedis</description>
-    <releaseNotes>Alienwow.YRedis v1.0.5</releaseNotes>
+    <releaseNotes>Alienwow.YRedis v1.0.7</releaseNotes>
     <copyright>Copyright © Alienwow 2018</copyright>
     <tags>redis cache</tags>
     <dependencies>

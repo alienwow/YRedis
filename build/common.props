@@ -1,25 +1,30 @@
 <Project>
-  <Import Project="..\version.props" />
   <PropertyGroup>
-    <Product>YRedis</Product>
-    <Authors>alienwow</Authors>
-    <Company>alienwow</Company>
-    <Copyright>Copyright © Alienwow 2018</Copyright>
-    <PackageId>$(ProjectName)</PackageId>
-    <RepositoryType>git</RepositoryType>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>git@github.com:alienwow/YRedis.git</RepositoryUrl>
-    <PackageLicenseUrl>http://alienwow.cc/YRedis/License</PackageLicenseUrl>
-    <PackageProjectUrl>http://alienwow.cc/YRedis</PackageProjectUrl>
-    <PackageIconUrl>http://alienwow.cc/YRedis.ico</PackageIconUrl>
-    <PackageTags>redis cache</PackageTags>
-    <NeutralLanguage>zh-CN</NeutralLanguage>
-    <PackageReleaseNotes>Alienwow.YRedis v1.0.5</PackageReleaseNotes>
-    <PackageOutputPath></PackageOutputPath>
-    <IncludeSymbols>false</IncludeSymbols>
-    <IncludeSource>false</IncludeSource>
-    <MinClientVersion>4.1.0</MinClientVersion>
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YRedis</RootNamespace>
+    <AssemblyName>YRedis</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\YRedis.xml</DocumentationFile>
   </PropertyGroup>
 </Project>
