@@ -14,7 +14,7 @@
     <PackageIconUrl>http://alienwow.cc/YRedis.ico</PackageIconUrl>
     <PackageTags>redis cache</PackageTags>
     <NeutralLanguage>zh-CN</NeutralLanguage>
-    <PackageReleaseNotes>Alienwow.YRedis v1.0.7</PackageReleaseNotes>
+    <PackageReleaseNotes>Alienwow.YRedis v1.0.8</PackageReleaseNotes>
     <PackageOutputPath></PackageOutputPath>
     <IncludeSymbols>false</IncludeSymbols>
     <IncludeSource>false</IncludeSource>
