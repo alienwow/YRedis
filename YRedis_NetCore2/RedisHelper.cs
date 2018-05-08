@@ -679,7 +679,7 @@ namespace YRedis
             int i = 0;
             foreach (var item in dic)
             {
-                hashEntry[i] = new HashEntry(item.Key, SerializeObject(item.Value));
+                hashEntry[i++] = new HashEntry(item.Key, SerializeObject(item.Value));
             }
             database.HashSet(key, hashEntry, flags);
         }
