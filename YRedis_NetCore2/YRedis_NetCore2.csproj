@@ -8,7 +8,7 @@
     <RootNamespace>YRedis</RootNamespace>
     <AssemblyName>YRedis</AssemblyName>
     <Copyright>Copyright © Alienwow 2018</Copyright>
-    <PackageReleaseNotes>Alienwow.YRedis v1.0.10</PackageReleaseNotes>
+    <PackageReleaseNotes>Alienwow.YRedis v1.0.11</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
