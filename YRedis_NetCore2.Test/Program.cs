@@ -12,6 +12,10 @@ namespace YRedis_NetCore2.Test
         {
             var _contentRootPath = Directory.GetCurrentDirectory();
             RedisHelper.InitRedis("127.0.0.1:7001,name=YRedis,connectTimeout=180,password=abcd-1234");
+
+            SetAddTest();
+            SetIsMemberTest();
+
             HashSetTest();
             HashGetTest();
             HashGetAllTest();
@@ -65,6 +69,7 @@ namespace YRedis_NetCore2.Test
                     //Thread.Sleep(1000);
                 });
             });
+
             //Task.Factory.StartNew(() =>
             //{
             //    var index = 0;
@@ -119,6 +124,18 @@ namespace YRedis_NetCore2.Test
             {
                 Debug.WriteLine(item);
             }
+        }
+
+        public static void SetAddTest()
+        {
+            RedisHelper.SAdd("test", "aaaa");
+            RedisHelper.SAdd("test", "bbbb");
+        }
+
+        public static void SetIsMemberTest()
+        {
+            var rv=RedisHelper.SIsMember("test", "aaaa");
+            Debug.WriteLine(rv);
         }
     }
 }
