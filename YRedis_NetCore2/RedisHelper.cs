@@ -763,10 +763,24 @@ namespace YRedis
         /// <param name="key"></param>
         /// <param name="db"></param>
         /// <param name="flags"></param>
-        public static void SCard(string key, int db = 0, CommandFlags flags = CommandFlags.None)
+        public static long SCard(string key, int db = 0, CommandFlags flags = CommandFlags.None)
         {
             var database = Redis.GetDatabase(db);
-            database.SetLength(key, flags);
+            return database.SetLength(key, flags);
+        }
+
+        /// <summary>
+        /// 是否是Set成员
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <param name="db"></param>
+        /// <param name="flags"></param>
+        /// <returns></returns>
+        public static bool SIsMember<T>(string key, T value, int db = 0, CommandFlags flags = CommandFlags.None)
+        {
+            var database = Redis.GetDatabase(db);
+            return database.SetContains(key, SerializeObject(value));
         }
 
         ///SDIFF
